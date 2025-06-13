@@ -4,8 +4,8 @@ class Te:
 
     sabores = {
         1 : {"Nombre" : "Té Negro", "Tiempo" : 3, "Recomendacion" : "Desayuno"},
-        2 : {"Nombre" : "Té Verde", "Tiempo" : 5, "Recomendacion" : "Almuerzo"},
-        3 : {"Nombre" : "Agua de Hierbas", "Tiempo" : 6, "Recomendacion" : "Once"}
+        2 : {"Nombre" : "Té Verde", "Tiempo" : 5, "Recomendacion" : " Medio día"},
+        3 : {"Nombre" : "Agua de Hierbas", "Tiempo" : 6, "Recomendacion" : "Atardecer"}
     }
 
     precios = {
@@ -20,7 +20,7 @@ class Te:
         #Retorna el tiempo de preparación en min y recomendacion segun sabor ingresado
         pedido = Te.sabores[sabor]
         
-        return pedido["nombre"], pedido["Tiempo"], pedido["Recomendacion"]
+        return pedido["Nombre"], pedido["Tiempo"], pedido["Recomendacion"]
 
     @staticmethod
     def obtener_precio(formato:int):

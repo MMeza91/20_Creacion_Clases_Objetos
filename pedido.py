@@ -13,3 +13,15 @@ nombre, tiempo, recomendacion = Te.receta(sabor)
 precio = Te.obtener_precio(formato)
 
 duracion = Te.duracion
+
+
+print(f""" 
+*** Hoja de información del té ***
+      
+a. Sabor del tipo de té: {nombre}
+b. Formato: {formato} gr
+c. Precio: ${precio} 
+d. Tiempo: {tiempo} min.
+e. Recomendación: Tomar al {recomendacion} 
+f. Vida util: {duracion} días         
+      """)
